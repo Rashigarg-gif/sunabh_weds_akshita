@@ -438,16 +438,16 @@
     }
 
     .fn-block .fn-name {
-      font-family: 'Jimmy Script', cursive;
-      font-size: 50px;
-      font-weight: 600;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+      font-weight: 800;
       color: #6e1a37;
     }
 
     .fn-block .fn-line {
       font-family: 'Cormorant Garamond', serif;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 900;
       color: #6e1a37;
       font-style: italic;
     }
@@ -455,7 +455,7 @@
     .fn-block .fn-when {
       font-family: 'Cormorant Garamond', serif;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 900;
       color: #6e1a37;
       letter-spacing: .04em;
       margin-top: 4px;
@@ -465,7 +465,7 @@
     .fn-block .fn-venue {
       font-family: 'Cormorant Garamond', serif;
       font-size: 17px;
-      font-weight: 700;
+      font-weight: 900;
       color: #6e1a37;
       margin-top: 2px;
     }
@@ -497,16 +497,16 @@
     }
 
     .wed-block .fn-name {
-      font-family: 'Jimmy Script', cursive;
-      font-size: 50px;
-      font-weight: 700;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+      font-weight: 800;
       color: #6e1a37
     }
 
     .wed-block .fn-line {
       font-family: 'Cormorant Garamond', serif;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 900;
       color: #6e1a37;
       margin-top: 6px;
       font-style: italic;
@@ -515,7 +515,7 @@
     .wed-block .fn-when {
       font-family: 'Cormorant Garamond', serif;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 900;
       color: #6e1a37;
       letter-spacing: .04em;
       margin-top: 14px;
@@ -525,7 +525,7 @@
     .wed-block .fn-venue {
       font-family: 'Cormorant Garamond', serif;
       font-size: 17px;
-      font-weight: 700;
+      font-weight: 900;
       color: #6e1a37;
       margin-top: 3px;
     }
@@ -674,6 +674,95 @@
         animation: none;
       }
     }
+    /* ============ RESPONSIVE TEXT SCALING (reference: 384 x 740 phone) ============ */
+    #envelope-page, #hero-page, #functions-page, #wedding-page { container-type: size; }
+    @supports (font-size: 1cqw) {
+      .tap-label {
+        font-size: 12px;
+        font-size: min(3.125cqw, 1.622cqh, 15.0px);
+      }
+      .hero-text .ganesh-line {
+        font-size: 18px;
+        font-size: min(4.688cqw, 2.432cqh, 22.5px);
+      }
+      .hero-text .blessing-label {
+        font-size: 18px;
+        font-size: min(4.688cqw, 2.432cqh, 22.5px);
+      }
+      .hero-text .blessing-names {
+        font-size: 20px;
+        font-size: min(5.208cqw, 2.703cqh, 25.0px);
+      }
+      .hero-text .invite-line {
+        font-size: 19px;
+        font-size: min(4.948cqw, 2.568cqh, 23.8px);
+      }
+      .hero-text .couple-names .nm {
+        font-size: 58px;
+        font-size: min(15.104cqw, 7.838cqh, 72.5px);
+      }
+      .hero-text .couple-names .with {
+        font-size: 16px;
+        font-size: min(4.167cqw, 2.162cqh, 20.0px);
+      }
+      .hero-names-lower .names {
+        font-size: 46px;
+        font-size: min(11.979cqw, 6.216cqh, 57.5px);
+      }
+      .scroll-hint {
+        font-size: 16px;
+        font-size: min(4.167cqw, 2.162cqh, 20.0px);
+      }
+     .fn-block .fn-name {
+        font-size: 35px;
+        font-size: min(9.115cqw, 4.730cqh, 43.8px);
+      }
+      .fn-block .fn-name {
+       font-size: 40px;
+        font-size: min(10.417cqw, 5.405cqh, 50px);
+      }
+      .fn-block .fn-when {
+        font-size: 18px;
+        font-size: min(4.688cqw, 2.432cqh, 22.5px);
+      }
+      .fn-block .fn-venue {
+        font-size: 17px;
+        font-size: min(4.427cqw, 2.297cqh, 21.2px);
+      }
+      .wed-block .fn-name {
+  font-size: 40px;
+  font-size: min(10.417cqw, 5.405cqh, 50px);
+}
+      .wed-block .fn-line {
+        font-size: 20px;
+        font-size: min(5.208cqw, 2.703cqh, 25.0px);
+      }
+      .wed-block .fn-when {
+        font-size: 18px;
+        font-size: min(4.688cqw, 2.432cqh, 22.5px);
+      }
+      .wed-block .fn-venue {
+        font-size: 17px;
+        font-size: min(4.427cqw, 2.297cqh, 21.2px);
+      }
+      .fam-block .fam-title {
+        font-size: 44px;
+        font-size: min(11.458cqw, 5.946cqh, 55.0px);
+      }
+      .fam-block .fam-name {
+        font-size: 22px;
+        font-size: min(5.729cqw, 2.973cqh, 27.5px);
+      }
+      .with-love {
+        font-size: 24px;
+        font-size: min(6.250cqw, 3.243cqh, 30.0px);
+      }
+      .with-love .script {
+        font-size: 38px;
+        font-size: min(9.896cqw, 5.135cqh, 47.5px);
+      }
+      .hero-text .invite-line { max-width: min(83.333cqw, 400px); }
+    }
   </style>
 </head>
 
@@ -747,10 +836,10 @@
       <div class="fn-block" style="top:34%;" data-fn>
         <div class="fn-name">Mangal Shagun</div>
         <div class="fn-line">Celebrating love, blessings & traditions.</div>
-        <div class="fn-when">Thursday, Dec 03 2026 &middot; 11:00 AM onwards</div>
+        <div class="fn-when">Thursday, Dec 03 2026 &middot; 11:00 AM <br/>onwards</div>
         <div class="fn-venue">843, Raja sahib street, Jagadhri</div>
       </div>
-      <div class="fn-block" style="top:56%;" data-fn>
+      <div class="fn-block" style="top:58%;" data-fn>
         <div class="fn-name">Shaam-e-sangeet</div>
         <div class="fn-line">A vibrant night of music, dance and cherished company</div>
         <div class="fn-when">Thursday, Dec 03 2026 &middot; 7:00 PM onwards</div>
